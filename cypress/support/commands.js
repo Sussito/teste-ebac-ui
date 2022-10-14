@@ -24,8 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-const { coroutine } = require("cypress/types/bluebird")
-
 Cypress.Commands.add('login', (usuario, senha) => {
     cy.get('#username').type(usuario)
     cy.get('#password').type(senha)
